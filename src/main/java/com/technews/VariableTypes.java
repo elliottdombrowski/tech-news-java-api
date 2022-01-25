@@ -11,5 +11,6 @@ public class VariableTypes {
         String c = "dog";
         String sum2 = a + c;
         System.out.println(sum2);
+        System.out.println(a + c);
     }
 }
