@@ -1,6 +1,14 @@
 package com.technews.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Date;
+
+@Entity
+@JsonIgnoreProperties({"hibernateLazyLoader", "handler"})
+@Table(name = "post")
 
 public class Post {
     private Integer id;
